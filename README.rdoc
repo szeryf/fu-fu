@@ -7,7 +7,7 @@ This plugin will allow you to filter profanity using basic replacement or a dict
 This fork is supposed to add a few features I needed:
 
 * ban all words starting with a prefix (like: abc*), [ready]
-* list of Polish profanity words, [planned]
+* list of Polish profanity words, [ready]
 * configuration option to choose one or many dictionaries of profanities, [planned]
 * ban all words containing some root (like: *abc*) [maybe someday]
 
