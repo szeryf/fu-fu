@@ -39,7 +39,7 @@ module ProfanityFilter
     class << self
       def clean(text, replace_method = '')
         return text if text.blank?
-        @replace_method = replace_method
+        @replace_method = replace_method.to_s
         text.split(/(\s)/).collect{ |word| clean_word(word) }.join
       end
 
