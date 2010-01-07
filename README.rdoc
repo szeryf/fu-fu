@@ -1,6 +1,6 @@
 = Fu-fu: The Profanity Filter for Rails
 
-This plugin will allow you to filter profanity using basic replacement or a dictionary term.  
+This plugin will allow you to filter profanity using basic replacement or a dictionary term.
 
 == Disclaimer
 
@@ -8,7 +8,7 @@ This plugin is provided as is - therefore, the creators and contributors of this
 
 == Install
 
-  ./script/plugin install git://github.com/adambair/fu-fu.git
+  ./script/plugin install git://github.com/szeryf/fu-fu.git
 
 == Example
 
