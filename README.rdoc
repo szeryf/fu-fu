@@ -74,7 +74,7 @@ Inquiring minds can checkout the simple benchmarks I've included so you can have
 You can run the benchmarks via:
   ruby test/benchmark/fu-fu_benchmark.rb
 
-*Please note* -- the prefix matching feature introduced by me makes the benchmarks run about 2.7 times *slower* (on my computer original: ~49s, mine: ~2m15s), so if really care about performance you might want to stick with the original. The individual operation on a 50-words string is still in terms of milliseconds, of course (on my computer original: ~1ms, mine: ~2-3ms). But don't say I didn't warn you :)
+*Please* *note* -- the prefix matching feature introduced by me makes the benchmarks run about 2.7 times *slower* (on my computer original: ~49s, mine: ~2m15s), so if really care about performance you might want to stick with the original. The individual operation on a 50-words string is still in terms of milliseconds, of course (on my computer original: ~1ms, mine: ~2-3ms). But don't say I didn't warn you :)
 
 == TODO
 
