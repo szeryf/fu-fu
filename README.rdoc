@@ -2,6 +2,14 @@
 
 This plugin will allow you to filter profanity using basic replacement or a dictionary term.
 
+== Reasons for this fork
+
+This fork is supposed to add a few features I needed:
+
+* ban all words starting with a prefix (like: abc*), [ready]
+* list of Polish profanity words, [planned]
+* configuration option to choose one or many dictionaries of profanities. [planned]
+
 == Disclaimer
 
 This plugin is provided as is - therefore, the creators and contributors of this plugin are not responsible for any damages that may result from it's usage.  Use at your own risk; backup your data.
@@ -51,6 +59,13 @@ Destructive (saves the filtered content to the database)
   ProfanityFilter::Base.clean(text, 'vowels')
   ProfanityFilter::Base.clean(text, 'hollow')
 
+=== Prefix matching
+
+If the dictionary contains words ending with asterisk <code>*</code>, all words starting with this prefix will be replaced. So, if you add something like this:
+
+  abc*: a...
+
+all words starting with <code>abc</code> (like abc, abcdef, abcxyz) will be considered banned and replaced by the filter.
 
 == Benchmarks
 
@@ -58,6 +73,8 @@ Inquiring minds can checkout the simple benchmarks I've included so you can have
 
 You can run the benchmarks via:
   ruby test/benchmark/fu-fu_benchmark.rb
+
+*Please note* -- the prefix matching feature introduced by me makes the benchmarks run about 2.7 times *slower* (on my computer original: ~49s, mine: ~2m15s), so if really care about performance you might want to stick with the original. The individual operation on a 50-words string is still in terms of milliseconds, of course (on my computer original: ~1ms, mine: ~2-3ms). But don't say I didn't warn you :)
 
 == TODO
 
