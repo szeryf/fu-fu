@@ -9,7 +9,7 @@ This fork is supposed to add a few features I needed:
 * ban all words starting with a prefix (like: <code>abc*</code>), [ready]
 * list of Polish profanity words, [ready]
 * configuration option to choose one or many dictionaries of profanities, [planned]
-* ban all words containing some root (like: <code>*abc*</code>) [maybe someday]
+* ban all words containing some root (like: <code>*abc</code><code>*</code>) [maybe someday]
 
 == Disclaimer
 
